@@ -1,0 +1,412 @@
+[{
+    "header": {
+        "SECTEURS_DACTIVITE": "secteurs d'activité",
+        "NOS_PRODUITS": "nos produits",
+        "ENTREPRISE": "entreprise",
+        "CONTACT": "contact",
+        "DEMANDER_UNE_DEMO": "demander une demo"
+    },
+    "header_fields": {
+        "ENCEINTES_SPORTIVES": "enceints sportives",
+        "SALLES_DE_CONCERT": "salles de concert",
+        "SALONS_PROFESSIONNELS": "salons professionnels"
+    },
+    "header_products": {
+        "CAISSE_INTELLIGENTE": "caisse intellgigente",
+        "VENTE_AMBULANTE_SUR_TABLETTE": "vente ambulante sur tablette",
+        "COMMANDE_EN_LIGNE": "commande en ligne",
+        "BORNES_TACTILES": "bornes tactiles",
+        "VENTE_AMBULANTE": "vente ambulante",
+        "REPORTING_ANALYSE": "reporting & analyse"
+    },
+    "home_info": [
+        {
+            "TITLE": "AUGMENTEZ VOS RECETTES",
+            "TXT": "en ouvrant de nouveaux canaux de vente et en améliorant l'expérience client",
+            "IMG": "img/HOME/board.png"
+            }, {
+            "TITLE": "OPTIMISER VOTRE GESTION",
+            "TXT": "des équipes et des stocks en toute simplicité, grâce à nos outils clés en main",
+            "IMG": "img/HOME/cog.png"
+            }, {
+            "TITLE": "ANALYSER VOS VENTES",
+            "TXT": "collectez de la data ultra qualifiée grâce à nos outils de reporting",
+            "IMG": "img/HOME/target.png"
+            }],
+    "sub": {
+        "enceintes-sportives": {
+            "COVER_TITLE": "stades",
+            "COVER_IMG_SRC": "img/STADES/cover.png",
+            "AVANTAGE_1": "livraison à la place",
+            "AVANTAGE_2": "vente ambulante",
+            "AVANTAGE_3": "click & collect",
+            "CONTENT": [{
+                "TITLE": "Un service ultra-rapide",
+                "TXT": [
+                    "Fini l’attente interminable en buvette et le rush de la mi-temps. Nos outils permettent à vos fans de passer commande en quelques clics et de payer en ligne par carte bancaire, à tout moment du match.",
+                    "Le temps moyen de traitement d’une commande (réception, préparation, livraison) est de 7 minutes.",
+                    "Vous augmentez ainsi votre taux de prise et vos revenus restauration et merchandising."
+                ],
+                "IMG": "img/STADES/Bulle1.png"
+            }, {
+                "TITLE": "Livraison à la place ou Click & Collect",
+                "TXT": [
+                    "Permettre au fan d’accéder au catalogue de produits de la buvette, passer commande, payer et se faire livrer à son siège sans quitter le match des yeux, pour vivre l’événement à 100%.",
+                    "Du côté du restaurateur, le service à la place permet d’élargir la plage de vente à toute la durée du match.",
+                    "Grâce à la mise en place du Click & Collect vous réduisez drastiquement vos files d’attente en point de vente."
+                ],
+                "IMG": "img/STADES/Bulle2.png"
+            }],
+            "REVIEW": {
+                "IMG_SRC": "img/STADES/Bulle-partner.png",
+                "TXT": "«Rapide, simple d’utilisation et novateur, Digifood s’inscrit dans la lignée du Stade Français Paris d’offrir aux spectateurs une expérience de match améliorée. Un service efficace qui permet de passer un agréable moment sans la contrainte de la file d’attente. »",
+                "AUTHOR": "Benjamin Maret",
+                "JOB": "Chargé de Développement Stade Français Rugby"
+            },
+            "SOLUTIONS": {
+                "TITLE": "Toutes nos solutions stade",
+                "ARR": [{
+                    "IMG_NAME": "Caisse intelligente",
+                    "IMG_SRC": "img/CAISSE/Caisse.png",
+                    "URL": "caisse-intelligente"
+                }, {
+                    "IMG_NAME": "Commande en ligne",
+                    "IMG_SRC": "img/DIGIPACK/iphone2.png",
+                    "URL": "commande-en-ligne"
+                }, {
+                    "IMG_NAME": "Prise de commande mobile",
+                    "IMG_SRC": "img/DIGIMOOVE/DIGIMOOVE.png",
+                    "URL": "prise-de-commande-mobile"
+                }, {
+                    "IMG_NAME": "Vente ambulante",
+                    "IMG_SRC": "img/DIGIPACK/digipack.png",
+                    "URL": "vente-ambulante"
+                }, {
+                    "IMG_NAME": "Bornes tactiles",
+                    "IMG_SRC": "img/BORNES/borne.png",
+                    "URL": "bornes-tactiles"
+                }, {
+                    "IMG_NAME": "Plateforme Admin",
+                    "IMG_SRC": "img/Admin/desktop.png",
+                    "URL": "plateforme-admin"
+                }]
+            }
+        },
+        "salles-de-concert": {
+            "COVER_TITLE": "salles de concert",
+            "COVER_IMG_SRC": "img/CONCERTS/cover.jpg",
+            "AVANTAGE_1": "livraison à la place",
+            "AVANTAGE_2": "vente ambulante",
+            "AVANTAGE_3": "click & collect",
+            "CONTENT": [{
+                "TITLE": "Offrez à vos fan une expérience inoubliable",
+                "TXT": [
+                    "Vivre un concert est un moment unique…trop souvent gaché par l’expérience restauration. Permettez à vos fans de vivre l’événement à 100% et sans aucune contrainte.",
+                    "Conscients des enjeux spécifique d’un concert, nous adaptons notre solution pour offrir un service de qualité à chaque spectateur :"
+                    ],
+                "LIST": [
+                    "Click & Collect et Zones de Livraison en fosse",
+                    "Livraison pour les places assises"
+                ],
+                "IMG": "img/CONCERTS/Bulle.png"
+            }],
+            "REVIEW": {
+                "IMG_SRC": "img/CONCERTS/Bulle-partner.png",
+                "TXT": "« Le Stade de France a lancé le service de livraison à la place au début d’une saison historique et exceptionnelle de concerts en juillet 2017 (…) une nouvelle dimension digitale pour notre enceinte, un nouveau mode de consommation pratico-ludique pour nos spectateurs. »",
+                "AUTHOR": "Jeremy Benichou",
+                "JOB": "Directeur Partenariats et Parcours Client, Consortium Stade de France"
+            },
+            "SOLUTIONS": {
+                "TITLE": "Toutes nos solutions Salles de Concert",
+                "ARR": [{
+                    "IMG_NAME": "Caisse intelligente",
+                    "IMG_SRC": "img/CAISSE/Caisse.png",
+                    "URL": "caisse-intelligente"
+                }, {
+                    "IMG_NAME": "Commande en ligne",
+                    "IMG_SRC": "img/DIGIPACK/iphone2.png",
+                    "URL": "commande-en-ligne"
+                }, {
+                    "IMG_NAME": "Prise de commande mobile",
+                    "IMG_SRC": "img/DIGIMOOVE/DIGIMOOVE.png",
+                    "URL": "prise-de-commande-mobile"
+                }, {
+                    "IMG_NAME": "Vente ambulante",
+                    "IMG_SRC": "img/DIGIPACK/digipack.png",
+                    "URL": "vente-ambulante"
+                }, {
+                    "IMG_NAME": "Bornes tactiles",
+                    "IMG_SRC": "img/BORNES/borne.png",
+                    "URL": "bornes-tactiles"
+                }, {
+                    "IMG_NAME": "Plateforme Admin",
+                    "IMG_SRC": "img/Admin/desktop.png",
+                    "URL": "plateforme-admin"
+                }]
+            }
+        },
+        "salons-professionnels": {
+            "COVER_TITLE": "SALONS PROFESSIONNELS",
+            "COVER_IMG_SRC": "img/SALONS/cover.png",
+            "AVANTAGE_1": "LIVRAISON SUR STAND",
+            "AVANTAGE_2": "PRISE DE COMMANDE SUR TABLETTE",
+            "AVANTAGE_3": "BORNES TACTILES",
+            "CONTENT": [{
+                "TITLE": "Un service sur-mesure pour les exposants",
+                "TXT": [
+                    "Se restaurer lorsqu’on est exposant est souvent un casse-tête : impossibilité d’abandonner le stand, files d’attente importantes en point de vente…",
+                    "DIGIFOOD apporte une solution de confort à ces exposants avec une offre personnalisée pour les parcs d’expositions :"
+                ],
+                "LIST": [
+                    "Commande et paiement via application mobile",
+                    "Prise de commande sur tablette par des hotesses sur les stands",
+                    "Livraison sur stand pour les exposants",
+                    "Click & Collect pour les visiteurs "
+                ],
+                "IMG": "img/SALONS/Bulle.png"
+                }],
+            "REVIEW": {
+                "IMG_SRC": "img/SALONS/Bulle-partner.png",
+                "TXT": "« Une équipe attentive, dynamique et professionnelle qui a toujours été à notre écoute pour contribuer à la satisfaction de nos clients communs. <br>Ce système innovant répond en tous points aux attentes des clients professionnels et grand public. Une organisation efficiente et toujours avec le sourire ! Merci pour ça »",
+                "AUTHOR": "Damien Gaudin",
+                "JOB": "Directeur Régional Marché Gares - Aéroports - Villes, AREAS"
+            },
+            "SOLUTIONS": {
+                "TITLE": "Toutes nos solutions Salons",
+                "ARR": [{
+                    "IMG_NAME": "Caisse intelligente",
+                    "IMG_SRC": "img/CAISSE/Caisse.png",
+                    "URL": "caisse-intelligente"
+                }, {
+                    "IMG_NAME": "Commande en ligne",
+                    "IMG_SRC": "img/DIGIPACK/iphone2.png",
+                    "URL": "commande-en-ligne"
+                }, {
+                    "IMG_NAME": "Prise de commande mobile",
+                    "IMG_SRC": "img/DIGIMOOVE/DIGIMOOVE.png",
+                    "URL": "prise-de-commande-mobile"
+                }, {
+                    "IMG_NAME": "Vente ambulante",
+                    "IMG_SRC": "img/DIGIPACK/digipack.png",
+                    "URL": "vente-ambulante"
+                }, {
+                    "IMG_NAME": "Bornes tactiles",
+                    "IMG_SRC": "img/BORNES/borne.png",
+                    "URL": "bornes-tactiles"
+                }, {
+                    "IMG_NAME": "Plateforme Admin",
+                    "IMG_SRC": "img/Admin/desktop.png",
+                    "URL": "plateforme-admin"
+                }]
+            }
+        },
+        "caisse-intelligente": {
+            "COVER_TITLE": "caisse intelligente",
+            "COVER_IMG_SRC": "img/CAISSE/cover.png",
+            "CONTENT": [{
+                "TITLE": "Terminaux de caisse ultra modernes",
+                "TXT": [
+                    "Support de caisse, imprimante thermique, tiroir caisse Bluetooth, et terminal de carte bancaire sans contact : DIGIFOOD sélectionne les meilleurs prestataires du marché pour apporter une solution clé en mains, à la pointe de la technologie.",
+                    "Vous possédez déjà le matériel ? Aucun problème ! Notre logiciel de caisse peut s’intégrer simplement à votre système existant."
+                ],
+                "IMG": "img/CAISSE/Caisse.png"
+            }, {
+                "TITLE": "Logiciel de caisse simple et intuitif",
+                "TXT": [
+                    "Adapté à une salle de 1500 places comme à un stade de 80 000 sièges, notre logiciel de caisse peut-être implémenté et pris en main par vos équipes en quelques heures."
+                ],
+                "LIST": [
+                    "Suivi en temps réel des Ventes et des Stocks",
+                    "Analyse des ventes, gestion des stocks et comptabilité",
+                    "Fontionne en Ethernet / 4G / WIFI / Offline",
+                    "Synchronisation multi-caisse, multi-sites",
+                    "Moyens paiement multiples"
+                ],
+                "IMG": "img/CAISSE/tablette.png"
+            }],
+            "INFO": [{
+                "TITLE": "SIMPLICITÉ",
+                "TXT": "Une plateforme intuitive et des tutoriels vidéos pour une prise en main rapide par vos équipes",
+                "IMG": "img/DIGIMOOVE/tauxdeprise.png"
+            }, {
+                "TITLE": "RAPIDITÉ",
+                "TXT": "Encaisser un client n’aura jamais été aussi rapide. Gagnez en efficacité opérationnelle !",
+                "IMG": "img/DIGIMOOVE/priseenmain.png"
+            }, {
+                "TITLE": "TRAÇABILITÉ",
+                "TXT": "Suivez votre activité en temps réel et mesurez la performance de vos points de vente dans le temps",
+                "IMG": "img/DIGIMOOVE/servicerapide.png"
+            }]
+        },
+        "prise-de-commande-mobile": {
+            "COVER_TITLE": "prise-de-commande-mobile",
+            "COVER_IMG_SRC": "img/COMMANDE/cover.png",
+            "CONTENT": [{
+                "TITLE": "Prise de commande mobile",
+                "TXT": [
+                    "Allégez vos files d’attentes en point de vente en allant directement à la rencontre du client. Vos employés, équipés d’une tablette et d’un terminal de carte bancaire portatif peuvent prendre une commande et l’encaisser, n’importe où, en quelques clics…"
+                ],
+                "IMG": "img/DIGIMOOVE/DIGIMOOVE.png"
+            }],
+            "INFO": [{
+                "TITLE": "AUGMENTE LE TAUX DE PRISE",
+                "TXT": "La prise de commande permet de réaliser des ventes supplémentaires en allant à la rencontre du client",
+                "IMG": "img/DIGIMOOVE/tauxdeprise.png"
+            }, {
+                "TITLE": "PRISE EN MAIN INTUITIVE",
+                "TXT": "En quelques heures, l’outil est prêt à l’emploi et vos équipes prêtent à vendre !",
+                "IMG": "img/DIGIMOOVE/priseenmain.png"
+            }, {
+                "TITLE": "SERVICE RAPIDE POUR LE CLIENT",
+                "TXT": "Améliorez l’expérience globale de vos clients en réduisant les files d’attente",
+                "IMG": "img/DIGIMOOVE/servicerapide.png"
+            }]
+        },
+        "commande-en-ligne": {
+            "COVER_TITLE": "COMMANDE EN LIGNE",
+            "COVER_IMG_SRC": "img/COMMANDE/cover.png",
+            "CONTENT": [{
+                "TITLE": "Application mobile ",
+                "TXT": ["Le principe ? Proposer à vos fans la commande en ligne sur mobile !",
+                            "L’utilisateur choisit ses produits, paye en ligne par carte bancaire puis a le choix : Livraison à la place en 5 min ou Retrait en point de vente via une file dédiée",
+                            "Trois possibilités d’intégration:"
+                            ],
+                "LIST": [
+                    "référencement de vos point de ventes sur la marketplace DIGIFOOD",
+                    "développement d’une application à vos couleurs (iOS et Android)",
+                    "intégration du service dans votre application"
+                ],
+                "IMG": "img/COMMANDE/Iphone.png"
+            }, {
+                "TITLE": "Site Desktop de commande",
+                "TXT": ["Permettez à vos clients de passer commande en toute simplicité depuis l’interface Desktop. Reprenant le parcours client de l’application mobile, l’interface Desktop permet offre une nouvelle expérience à l’utilisateur et augmente le nombre de pré-commandes.",
+                "L’interface Desktop peut-être intégrée sur votre site via un onglet dédié ou un plug-in."
+                ],
+                "LIST": [
+                    "référencement de vos point de ventes sur la marketplace DIGIFOOD",
+                    "développement d’une application à vos couleurs (iOS et Android)",
+                    "intégration du service dans votre application"
+                ],
+                "IMG": "img/COMMANDE/laptop.png"
+            }],
+            "INFO": [{
+                    "TITLE": "AUGMENTE LE PANIER MOYEN ",
+                    "TXT": "Le panier moyen en digital est en moyenne deux fois supérieur à celui en vente physique",
+                    "IMG": "img/DIGIMOOVE/tauxdeprise.png"
+                        },
+                {
+                    "TITLE": "OPTIMISE VOTRE STAFF",
+                    "TXT": "Plus de temps mort pour vos équipes. La commande en ligne ouvre de nouvelles plages de vente",
+                    "IMG": "img/DIGIMOOVE/priseenmain.png"
+                        },
+                {
+                    "TITLE": "DÉCLENCHE L’ACHAT",
+                    "TXT": "Développez l’achat émotionnel grâce aux système de push notification et de points fidélité",
+                    "IMG": "img/COMMANDE/sell.png"
+                        }]
+        },
+        "bornes-tactiles": {
+            "COVER_TITLE": "BORNES DE COMMANDE TACTILES",
+            "COVER_IMG_SRC": "img/BORNES/cover.png",
+            "CONTENT": [{
+                "TITLE": "Bornes Tactiles",
+                "TXT": [
+                    "Extrêmement pratique et ludique, la prise de commande par le client lui même permet de réduire vos files d’attente tout en améliorant l’efficacité opérationnelle de vos équipes en points de vente.",
+                    "Equipées d’un terminal de carte bancaire et d’une imprimante, ces bornes ultra modenres permettent au client de retirer sa commande sur simple présentation de son ticket et sans faire la queue",
+                    "L’interface des bornes est entièrement personnalisable à vos couleurs ou celles du point de vente.",
+                    "Nos équipes assurent l’installation, la formation des équipes et la maintenance des bornes."
+                ],
+                "IMG": "img/BORNES/borne.png"
+            }],
+            "INFO": [{
+                "TITLE": "OPTIMISE VOTRE STAFF",
+                "TXT": "Laissez les bornes prendre la commande des clients, dédiez votre staff à la préparation",
+                "IMG": "img/STAFF/staff.png"
+            }, {
+                "TITLE": "PRISE EN MAIN INTUITIVE",
+                "TXT": "Le client, habitué à ce type de dispositifs l’utilisera naturellement",
+                "IMG": "img/CAISSE/simplicite.png"
+            }, {
+                "TITLE": "SERVICE RAPIDE POUR LE CLIENT",
+                "TXT": "Améliorez l’expérience globale de vos clients en réduisant les files d’attente",
+                "IMG": "img/CAISSE/rapidite.png"
+            }]
+        },
+        "vente_ambulante": {
+            "COVER_TITLE": "VENTE AMBULANTE",
+            "COVER_IMG_SRC": "img/DIGIPACK/cover.png",
+            "CONTENT": [{
+                "TITLE": "Sac à dos avec tireuse intégrée",
+                "TXT": [
+                    "Chaque sac à dos contient un fut et une bouteille de gaz permettant de servir des boissons (bière ou soda) en pression. Disponible en format 25cl ou 50cl, le DIGIPACK permet d’aller à la rencontre des fans, devant l’enceinte, dans les coursives et même dans les tribunes.",
+                    "Les packeurs peuvent encaisser les commandes client en espèces ou par carte bancaire grâce aux terminaux paiement portatifs Sumup."
+                ],
+                "IMG": "img/DIGIPACK/digipack.png"
+            }, {
+                "TITLE": "L’application DIGIPACK",
+                "TXT": [
+                    "Chaque vendeur est équipé d’une application spécifique qui lui permet d’enregistrer chaque vente réalisée.",
+                    "Il est ainsi possible de tracker en temps réel l’activité Vente Ambulante et de suivre son évolution au fil des événements."
+                ],
+                "IMG": "img/DIGIPACK/iphone2.png"
+            }],
+            "INFO": [{
+                "TITLE": "SIMPLICITÉ",
+                "TXT": "La vente ambulante, un intemporel dont la simplicité et la praticité raviront vos fans",
+                "IMG": "img/CAISSE/simplicite.png"
+            }, {
+                "TITLE": "TRAÇABILITÉ",
+                "TXT": "Suivez l’activité des Packeurs en temps réel depuis la Plateforme Admin qui enregistre chaque vente",
+                "IMG": "img/CAISSE/trace.png"
+            }]
+        },
+        "plateforme-admin": {
+            "COVER_TITLE": "REPORTING & ANALYSE",
+            "COVER_IMG_SRC": "img/ADMIN/cover.png",
+            "CONTENT": [{
+                "TITLE": "Transparence et visibilité",
+                "TXT": [
+                    "Consultez en temps réel l’activité de restauration dans votre enceinte et exploitez les datas client (plus de 50 indicateurs) pour identifier les grandes tendances de consommation de vos fans.",
+                    "La Plateforme Admin permet de syncrhoniser les ventes physiques,  digitales et ambulantes pour vous offrir une vision globale sur l’activité.",
+                    "L’interface permet également de piloter l’activité de vos points de vente en quelques clics (gestion des stocks, gestion des slots horaires)."
+                ],
+                "IMG": "img/ADMIN/desktop.png"
+            }],
+            "FEATURES": {
+                "TITLE": "Fonctionnalités",
+                "LIST": [
+                        "Gestion des stocks / slots horaires",
+                        "Synchronisation des ventes physiques / digitales / ambulantes",
+                        "Rapports de vente Excel / PDF par point de vente ou par match",
+                        "Plus de 50 indicateurs de tendances de consommation"
+                ]
+            },
+            "INFO": [{
+                "TITLE": "VISIBILITÉ",
+                "TXT": "Analysez l’activité de restauration en quelques clics grâce à cette plateforme centralisée",
+                "IMG": "img/ADMIN/visibilite.png"
+            }, {
+                "TITLE": "TRAÇABILITÉ",
+                "TXT": "Suivez votre activité en temps réel et mesurez l’évolution de la performance au fil des événements",
+                "IMG": "img/CAISSE/trace.png"
+            }]
+        }
+    },
+    "entreprise": {
+        "COVER_TITLE": "ENTREPRISE",
+        "COVER_IMG_SRC": "img/entreprise/cover.png",
+        "DESCRIPTION": "Fondée par des passionnés de sport et de nouvelles technologies, la startup DIGIFOOD s’est spécialisée dans le développement d’outils et la mise en place de place de process de vente pour les professionnels de la restauration événementielle.",
+        "RUNNER": {
+            "DEVENIR_RUNNER": "Devenir Runner",
+            "DEVENIR_RUNNER_SUB": "Rejoins la Red Army pour être au coeur de l’action",
+            "COVER_TITLE": "Postuler",
+            "COVER_IMG_SRC": "img/entreprise/devenir-runner.png"
+        },
+        "TEAM": {
+        "REJOINDRE_EQUIPE": "Rejoindre l'équipe",
+        "REJOINDRE_EQUIPE_SUB": "De nouveaux postes sont à pourvoir, postule ici !"
+        },
+        "PRESSE": "PRESSE",
+        "SUPPORTS": "Ils nous soutiennent"
+    }
+}]

@@ -1,0 +1,78 @@
+<div id="entreprise">
+    <div id="entreprise" ng-controller="EntrepriseCtrl as vm">
+        <div id="s_cover">
+            <div class="cover_title">
+                <h1 class="text-center">{{w.entreprise.COVER_TITLE}}</h1>
+            </div>
+            <img src="{{w.entreprise.COVER_IMG_SRC}}">
+        </div>
+
+        <p class="description text-center">{{w.entreprise.DESCRIPTION}}</p>
+
+        <div id="home_carousel" class="carousel slide" data-interval="false" data-ride="carousel">
+            <div class="page_container fill">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item fill" ng-class="{'active': $first}" ng-repeat="slide in vm.finalArray track by $index">
+                        <ul class="nav col-md-12">
+                            <li class="col-md-3" ng-repeat="partner in slide">
+                                <img src="{{partner.url}}">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" onclick="return false;" href="#home_carousel" role="button" data-slide="prev">
+                <span class="sr-only">previous</span>
+            </a>
+                <a class="carousel-control-next" onclick="return false;" href="#home_carousel" role="button" data-slide="next">
+                <span class="sr-only">next</span>
+            </a>
+            </div>
+        </div>
+
+        <div class="runner text-center">
+            <h2 class="section_title">{{w.entreprise.RUNNER.DEVENIR_RUNNER}}</h2>
+            <p>{{w.entreprise.RUNNER.DEVENIR_RUNNER_SUB}}</p>
+
+            <div id="runner_cover">
+                <div class="cover_title">
+                    <a class="ask_demo back_red" data-toggle="modal" role="button" href="#runner" onclick="return false;">{{w.entreprise.RUNNER.COVER_TITLE}}</a>
+                </div>
+                <img src="{{w.entreprise.RUNNER.COVER_IMG_SRC}}">
+            </div>
+
+        </div>
+        
+        <div class="team text-center">
+            <h2>{{w.entreprise.TEAM.REJOINDRE_EQUIPE}}</h2>
+            <p>{{w.entreprise.TEAM.REJOINDRE_EQUIPE_SUB}}</p>
+
+            <ul id="jobList" class="row">
+                <li ng-repeat="job in vm.jobs" class="col-md-4">
+                    <h3>{{job.title}}</h3>
+                    <p>{{job.area}}</p>
+                    <a href="{{job.URL}}">{{w.entreprise.RUNNER.COVER_TITLE}}</a>
+                </li>
+            </ul>
+        </div>
+
+       <div class="press">
+        <div class="page_container">
+           <h2 class="text-center">{{w.entreprise.PRESSE}}</h2>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item" ng-repeat="press in vm.list.press">
+                    <img src="{{press.url}}" alt="press.name">
+                </li>
+            </ul>
+           </div>           
+       </div>
+
+        <div class="supports page_container">
+           <h2 class="text-center">{{w.entreprise.SUPPORTS}}</h2>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item text-center" ng-repeat="support in vm.list.supports">
+                    <img src="{{support.url}}" alt="support.name">
+                </li>
+            </ul>
+        </div>
+
+    </div>

@@ -1,0 +1,76 @@
+<div id="home_video">
+    <video autoplay="autoplay" loop>
+          <source src="video/background_mp.mp4" type="video/mp4" />
+        </video>
+    <div id="vidtop-content">
+        <div class="vid-info">
+            <h1>digitalisez votre activité</h1>
+        </div>
+        <a class="ask_demo cta_rectangle back_red" data-toggle="modal" role="button" href="#myModal" onclick="return false;">Demander une demo</a>
+    </div>
+</div>
+
+<div class="text-center page_container">
+    <ul id="home_info" class="row col-12">
+        <li class="col-12 col-md-4" ng-repeat="info in w.home_info">
+            <div>
+                <div><img src="{{info.IMG}}" alt="courbe" class="img-fluid"></div>
+                <h3>{{info.TITLE}}</h3>
+                <p>{{info.TXT}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div id="home_carousel" class="carousel slide" data-interval="false" data-ride="carousel">
+    <div class="page_container fill">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item fill" ng-class="{'active': $first}" ng-repeat="slide in vm.finalArray track by $index">
+                <ul class="col-md-12 d-flex justify-content-around text-center">
+                    <li ng-repeat="partner in slide">
+                        <img src="{{partner.url}}">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a class="carousel-control-prev" onclick="return false;" href="#home_carousel" role="button" data-slide="prev" ng-if="vm.finalArray[1]">
+        <span class="sr-only">previous</span>
+      </a>
+        <a class="carousel-control-next" onclick="return false;" href="#home_carousel" role="button" data-slide="next" ng-if="vm.finalArray[1]">
+        <span class="sr-only">next</span>
+      </a>
+    </div>
+</div>
+
+<div class="text-center page_container">
+    <div id="solutions" ng-controller="HeaderCtrl as header">
+        <h2>Des solutions adaptées à chaque lieu</h2>
+        <span>offrez une expérience inoubliable à vos clients</span>
+        <div class="row col-12">
+            <div ng-click="header.go('fields', 'enceintes-sportives')" class="col-md-4 col-sm-12">
+                <div class="type_of_solution">
+                    <img src="img/bulle-1.png" class="col-sm-12">
+                    <span>{{w.header_fields.ENCEINTES_SPORTIVES}}</span>
+                </div>
+            </div>
+            <div ng-click="header.go('fields', 'salles-de-concert')" class="col-md-4 col-sm-12">
+                <div class="type_of_solution">
+                    <img src="img/bulle-2.png" class="col-sm-12">
+                    <span>{{w.header_fields.SALLES_DE_CONCERT}}</span>
+                </div>
+            </div>
+            <div ng-click="header.go('fields', 'salons-profesionnels')" class="col-md-4 col-sm-12">
+                <div class="type_of_solution">
+                    <img src="img/bulle-3.png" class="col-sm-12">
+                    <span>{{w.header_fields.SALONS_PROFESSIONNELS}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cta_contact">
+        <p>Nos solutions peuvent être implémentées dans d'autres types de lieux.
+            <br>faites nous en la demande !</p>
+        <a class="cta_rectangle back_red" onclick="return false;" data-toggle="modal" role="button" href="#myModal">contact</a></div>
+</div>
+
+<div ui-view></div>

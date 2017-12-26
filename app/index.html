@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html ng-app="digifood">
+
+<head>
+    <meta charset="utf-8">
+    <title translate="TITLE">Digifood fr</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/front.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="/app.js"></script>
+    
+    <script src="/components/services/entrepriseService.js"></script>
+    
+    <script src="/components/controllers/headerController.js"></script>
+    <script src="/components/controllers/homeController.js"></script>
+    <script src="/components/controllers/fieldController.js"></script>
+    <script src="/components/controllers/productController.js"></script>
+    <script src="/components/controllers/entrepriseController.js"></script>
+    <!--    <script src="/components/controllers/contactController.js"></script>-->
+    <script src="/components/controllers/modalController.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div ng-include src="'components/partials/partial-header.html'"></div>
+    </div>
+    <div class="index-ui-view">
+        <div ui-view></div>
+    </div>
+
+    <footer class="col-12">
+        <div class="page_container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="footer_left">
+                        <img src="img/LANG/digifood.png" alt="Digifood">
+                        <p>révolutionner l'experience client, <br> un sourire à la fois</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="footer_right">
+                        <ul class="nav footer_links" ng-controller="HeaderCtrl">
+                            <li>
+                                <a class="nav-link menu-height" ui-sref="entreprise">entreprise</a>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-height" href="https://digifood-blog.com/" target="_blank">blog</a>
+                            </li>
+                            <li>
+                                <a class="nav-link menu-height" data-toggle="modal" role="button" href="#myModal">contact</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="nav footer_links" ng-controller="HeaderCtrl">
+                            <li>
+                                <a href="https://www.facebook.com/digifoodapp/" target="_blank">
+                                    <img src="img/HOME/facebook.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/DigiFood_App" target="_blank">
+                                    <img src="img/HOME/twitter.png" alt="Twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company-beta/5222952/" target="_blank">
+                                    <img src="img/HOME/linkedin.png" alt="Linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/digifood_app/" target="_blank">
+                                    <img src="img/HOME/instagram.png" alt="Instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <base href="/">
+    <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" ng-controller="ModalCtrl as vm">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel" class="text-center">travaillons ensemble</h3>
+                </div>
+                <div class="modal-body">
+                    <span>laissez nous un message ici, nous vous contacterons dans les plus brefs délais</span>
+                    <form class="form-horizontal col-sm-12">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control required custom_input" placeholder="Votre nom *" data-placement="top" data-trigger="manual" data-content="Doit faire au moins 3 caractères, et ne contenir que des lettres." type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control required phone custom_input" placeholder="Téléphone *" data-placement="top" data-trigger="manual" data-content="Doit être un téléphone valide (0123456789)" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control required email custom_input" placeholder="Email *" data-placement="top" data-trigger="manual" data-content="Doit être une adresse Email valide (user@gmail.com)" type="text">
+                                </div>
+                            </div>
+                            <div class="col-sm-6"><label class="message_label">votre message</label>
+                                <textarea class="form-control" data-placement="top" data-trigger="manual" ng-keyup="resize($event)" ng-keydown="resize($event)"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button ng-show="!vm.modalerror" class="btn btn-success">envoyer</button>
+                            <button ng-show="vm.modalerror" class="btn btn-warning">envoyer</button>
+                            <p ng-show="vm.modalerror" class="help-block pull-left text-danger hide" id="form-error">&nbsp; Fomulaire invalide. </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

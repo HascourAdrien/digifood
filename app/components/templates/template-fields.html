@@ -1,0 +1,89 @@
+<div id="tpl_secteurs" ng-controller="FieldCtrl as vm">
+    <div id="s_cover">
+        <div class="cover_title">
+            <h1 class="text-center">{{w.sub[f.page].COVER_TITLE}}</h1>
+        </div>
+        <img src="{{w.sub[f.page].COVER_IMG_SRC}}">
+    </div>
+
+    <div id="s_avantages" class="row col-12 text-center">
+        <div class="col-12 col-md-4 p-3 p-md-5">
+            <h2>{{w.sub[f.page].AVANTAGE_1}}</h2>
+        </div>
+        <div class="col-12 col-md-4 p-3 p-md-5">
+            <h2>{{w.sub[f.page].AVANTAGE_2}}</h2>
+        </div>
+        <div class="col-12 col-md-4 p-3 p-md-5">
+            <h2>{{w.sub[f.page].AVANTAGE_3}}</h2>
+        </div>
+    </div>
+
+    <div id="field_carousel" class="carousel slide" data-interval="false" data-ride="carousel">
+        <div class="page_container fill">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item fill" ng-class="{'active': $first}" ng-repeat="slide in vm.finalArray track by $index">
+                    <ul class="col-md-12 d-flex justify-content-around text-center">
+                        <li ng-repeat="partner in slide">
+                            <img src="{{partner.url}}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="carousel-control-prev" onclick="return false;" href="#field_carousel" role="button" data-slide="prev" ng-if="vm.finalArray[1]">
+            <span class="sr-only">previous</span>
+          </a>
+            <a class="carousel-control-next" onclick="return false;" href="#field_carousel" role="button" data-slide="next" ng-if="vm.finalArray[1]">
+            <span class="sr-only">next</span>
+          </a>
+        </div>
+    </div>
+    <div class="page_container s_content_row row" ng-repeat="content in w.sub[f.page].CONTENT">
+        <div ng-if="$even" class="col-12 col-md-5">
+            <img src="{{content.IMG}}">
+        </div>
+        <div class="col-12 col-md-7 s_content_txt" ng-class="{'reverse_borders': $odd}">
+            <div>
+                <h3>{{content.TITLE}}</h3>
+                <p ng-repeat="txt in content.TXT">{{txt}}</p>
+                <ul ng-if="content.LIST">
+                    <li ng-repeat="item in content.LIST">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+        <div ng-if="$odd" class="col-12 col-md-5 text-right">
+            <img src="{{content.IMG}}">
+        </div>
+    </div>
+
+    <div id="s_review">
+        <div class="page_container row">
+            <div class="col-md-2">
+                <img src="{{w.sub[f.page].REVIEW.IMG_SRC}}" alt="">
+            </div>
+            <div id="s_review_content" class="col-md-6 col-md-offset-2">
+                <p>{{w.sub[f.page].REVIEW.TXT}}</p>
+                <p class="s_review_author_name">{{w.sub[f.page].REVIEW.AUTHOR}}</p>
+                <p class="s_review_author_job">{{w.sub[f.page].REVIEW.JOB}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="s_solutions" ng-controller="HeaderCtrl as header">
+        <p class="s_solutions_title text-center">{{w.sub[f.page].SOLUTIONS.TITLE}}</p>
+
+        <div class="col-12 row justify-content-between">
+            <div class="col-12 col-md-6 row" ng-class="{'s_solutions_margin': $even}" ng-repeat="solution in w.sub[f.page].SOLUTIONS.ARR" ng-click="header.go('products', solution.URL)">
+                <div class="col-md-4 p-3">
+                    <img class="p-3" src="{{solution.IMG_SRC}}">
+                </div>
+                
+                <div class="s_hr"></div>
+                <div class="col-md-7">
+                    <span>{{solution.IMG_NAME}}</span>
+                </div>
+                <div ng-if="$even" class="md-col-2"></div>
+            </div>
+        </div>
+
+    </div>
+    <div ng-include src="'components/partials/partial-cover_contact.html'"></div>

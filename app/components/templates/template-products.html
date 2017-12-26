@@ -1,0 +1,38 @@
+<div id="tpl_produits">
+    <div id="s_cover">
+        <div class="cover_title">
+            <h1 class="text-center">{{w.sub[f.page].COVER_TITLE}}</h1>
+        </div>
+        <img src="{{w.sub[f.page].COVER_IMG_SRC}}">
+    </div>
+
+    <div class="page_container s_content_row row" ng-repeat="content in w.sub[f.page].CONTENT">
+        <div ng-if="$odd" class="col-12 col-md-5">
+            <img src="{{content.IMG}}">
+        </div>
+        <div class="col-12 col-md-7 s_content_txt" ng-class="{'reverse_borders': $even}">
+            <div>
+                <h3>{{content.TITLE}}</h3>
+                <p ng-repeat="txt in content.TXT">{{txt}}</p>
+                <ul ng-if="content.LIST">
+                    <li ng-repeat="item in content.LIST">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+        <div ng-if="$even" class="col-12 col-md-5 text-right">
+            <img src="{{content.IMG}}">
+        </div>
+    </div>
+
+    <div class="text-center home_info_gradient">
+        <ul id="home_info" class="row col-12">
+            <li class="col-12 col-md-4" ng-repeat="info in w.sub[f.page].INFO">
+                <div>
+                    <div><img src="{{info.IMG}}" alt="courbe" class="img-fluid"></div>
+                    <h3>{{info.TITLE}}</h3>
+                    <p>{{info.TXT}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<nav ng-controller="HeaderCtrl as header" class="col-md-10 navbar navbar-toggleable-md navbar-light bg-light">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand col-md-1" ui-sref="home"><img src="img/LANG/digifood.png" alt="Digifood"></a>
+    <div class="collapse navbar-collapse col-md-11" id="navbarNavDropdown">
+        <ul class="navbar-nav col-md-4">
+            <li class="nav-item dropdown">
+                <div class="nav-link menu-height dropdown-toggle" role="button">{{w.header.SECTEURS_DACTIVITE}}
+                </div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <div class="white-space"></div>
+                    <a class="dropdown-item" ui-sref="fields({page: 'enceintes-sportives'})">{{w.header_fields.ENCEINTES_SPORTIVES}}</a>
+                    <a class="dropdown-item" ui-sref="fields({page: 'salles-de-concert'})">{{w.header_fields.SALLES_DE_CONCERT}}</a>
+                    <a class="dropdown-item" ui-sref="fields({page: 'salons-professionnels'})">{{w.header_fields.SALONS_PROFESSIONNELS}}</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="nav-link menu-height dropdown-toggle" role="button">{{w.header.NOS_PRODUITS}}</div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                   <div class="white-space"></div>
+                    <a class="dropdown-item" ui-sref="products({page: 'caisse-intelligente'})">{{w.header_products.CAISSE_INTELLIGENTE}}</a>
+                    <a class="dropdown-item" ui-sref="products({page: 'prise-de-commande-mobile'})">{{w.header_products.VENTE_AMBULANTE_SUR_TABLETTE}}</a>
+                    <a class="dropdown-item" ui-sref="products({page: 'commande-en-ligne'})">{{w.header_products.COMMANDE_EN_LIGNE}}</a>
+                    <a class="dropdown-item" ui-sref="products({page: 'bornes-tactiles'})">{{w.header_products.BORNES_TACTILES}}</a>
+                    <a class="dropdown-item" ui-sref="products({page: 'vente_ambulante'})">{{w.header_products.VENTE_AMBULANTE}}</a>
+                    <a class="dropdown-item" ui-sref="products({page: 'plateforme-admin'})">{{w.header_products.REPORTING_ANALYSE}}</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link menu-height" ui-sref="entreprise">{{w.header.ENTREPRISE}}</a></li>
+            <li class="nav-item">
+                <a class="nav-link menu-height" data-toggle="modal" role="button" href="#myModal" onclick="return false;">{{w.header.CONTACT}}</a></li>
+        </ul>
+        <div class="col-md-6 header-right" ng-controller="SwitchLangCtrl">
+            <ul class="nav pull-right">
+                <li><a href="#" ng-click="initLang('fr')" class="flag_fr"></a></li>
+                <li><a href="#" ng-click="initLang('en')" class="flag_en"></a></li>
+                <li><a href="#" ng-click="initLang('es')" class="flag_es"></a></li>
+                <li><a href="#" ng-click="initLang('de')" class="flag_de"></a></li>
+                <li><a class="ask_demo cta_rectangle back_red" data-toggle="modal" role="button" href="#myModal" onclick="return false;">{{w.header.DEMANDER_UNE_DEMO}}</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

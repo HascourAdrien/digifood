@@ -1,0 +1,46 @@
+[{
+    "header": {
+        "SECTEURS_DACTIVITE": "fields of activites",
+        "NOS_PRODUITS": "nos produits",
+        "ENTREPRISE": "entreprise",
+        "CONTACT": "contact",
+        "DEMANDER_UNE_DEMO": "demander une demo"
+    },
+    "header_fields": {
+        "ENCEINTES_SPORTIVES": "enceints sportives",
+        "SALLES_DE_CONCERT": "salles de concert",
+        "SALONS_PROFESSIONNELS": "salons professionnels"
+    },
+    "header_products": {
+        "CAISSE_INTELLIGENTE": "caisse intellgigente",
+        "VENTE_AMBULANTE_SUR_TABLETTE": "vente ambulante sur tablette",
+        "COMMANDE_EN_LIGNE": "commande en ligne",
+        "BORNES_TACTILES": "bornes tactiles",
+        "VENTE_AMBULANTE": "vente ambulante",
+        "REPORTING_ANALYSE": "reporting & analyse"
+    },
+    "sub": {
+        "enceintes-sportives": {
+            "COVER_TITLE": "stades",
+            "COVER_IMG_SRC": "img/STADES/cover.png",
+            "AVANTAGE_1": "livraison à la place",
+            "AVANTAGE_2": "vente ambulante",
+            "AVANTAGE_3": "click & collect",
+            "PARTNERS" : [""]
+        },
+        "salles-de-concert": {
+            "COVER_TITLE": "salles de concert",
+            "COVER_IMG_SRC": "img/CONCERTS/cover.jpg",
+            "AVANTAGE_1": "livraison à la place",
+            "AVANTAGE_2": "vente ambulante",
+            "AVANTAGE_3": "click & collect"
+        },
+        "salons-profesionnels": {
+            "COVER_TITLE": "salles de concert",
+            "COVER_IMG_SRC": "img/SALONS/cover.png",
+            "AVANTAGE_1": "livraison à la place",
+            "AVANTAGE_2": "vente ambulante",
+            "AVANTAGE_3": "click & collect"
+        }
+    }
+}]
